@@ -8,4 +8,4 @@ wget -N https://raw.githubusercontents.com/ygkkkyb/acme-script/main/acme.sh && b
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/kkkyg/acme-script.svg)](https://starchart.cc/kkkyg/acme-script)
+[![Stargazers over time](https://starchart.cc/ygkkkyb/acme-script.svg)](https://starchart.cc/ygkkkyb/acme-script)
