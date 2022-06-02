@@ -72,7 +72,7 @@ fi
 yellow "当前注册的邮箱名称：$Aemail"
 green "开始安装acme.sh申请证书脚本"
 curl https://get.acme.sh | sh -s email=$Aemail
-[[ -n $(/root/.acme.sh/acme.sh -v 2>/dev/null) ]] && green "安装acme.sh证书申请程序成功" || red "安装acme.sh证书申请程序失败，请在https://github.com/kkkyg/acme-script/issues反馈" 
+[[ -n $(/root/.acme.sh/acme.sh -v 2>/dev/null) ]] && green "安装acme.sh证书申请程序成功" || red "安装acme.sh证书申请程序失败，请在https://github.com/ygkkkyb/acme-script/issues反馈" 
 bash /root/.acme.sh/acme.sh --upgrade --use-wget --auto-upgrade
 }
 ACMEstandaloneDNS(){
@@ -182,7 +182,7 @@ green "例：原二级域名 x.kkkyg.eu.org 或 x.kkkyg.cf ，在cloudflare中�
 echo
 yellow "建议二：更换下当前本地网络IP环境，再尝试执行脚本"
 echo
-yellow "建议三：向甬哥提问 https://github.com/kkkyg/acme-script/issues"
+yellow "建议三：向甬哥提问 https://github.com/ygkkkyb/acme-script/issues"
 rm -rf acme.sh
 fi
 fi
@@ -272,8 +272,8 @@ echo -e "${bblue} ░██ ██       ${plain} ░██ ██        ░█
 echo -e "${bblue} ░██ ░${plain}██       ░██ ░██       ░██ ░██          ░${red}██         ░██    ░░██${plain}"
 echo -e "${bblue} ░${plain}██  ░░██     ░██  ░░██     ░██  ░░${red}██        ░██          ░██ ██ ██${plain} "
 green "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" 
-white "甬哥Github项目  ：github.com/kkkyg"
-white "甬哥blogger博客 ：kkkyg.blogspot.com"
+white "甬哥Github项目  ：github.com/ygkkkyb"
+white "甬哥blogger博客 ：ygkkk.blogspot.com"
 white "甬哥YouTube频道 ：www.youtube.com/c/甬哥侃侃侃kkkyg"
 yellow "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" 
 yellow " 提示："
