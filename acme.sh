@@ -28,7 +28,7 @@ fi
 acme1(){
 [[ $(type -P yum) ]] && yumapt='yum -y' || yumapt='apt -y'
 [[ $(type -P curl) ]] || (yellow "检测到curl未安装，升级安装中" && $yumapt update;$yumapt install curl)
-[[ $(type -P socat) ]] || ($yumapt update && $yumapt install socat)
+[[ $(type -P socat) ]] || ($yumapt update;$yumapt install socat)
 $yumapt install lsof -y
 v6=$(curl -s6m3 https://ip.gs -k)
 v4=$(curl -s4m3 https://ip.gs -k)
